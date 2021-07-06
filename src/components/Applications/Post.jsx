@@ -1,24 +1,32 @@
-import { Create, SimpleForm, TextField, SelectInput } from 'react-admin';
+import {
+  Create,
+  SimpleForm,
+  TextField,
+  SelectInput,
+  TextInput,
+} from 'react-admin';
+import RichTextInput from 'ra-input-rich-text';
 
 const UsersPost = (props) => {
   return (
     <Create title="Create" {...props}>
       <SimpleForm>
         <TextField source="id" />
+        <TextInput source="name" />
+        <RichTextInput source="description" />
+        <TextInput source="logo" />
+        <TextInput source="banner" />
         <SelectInput
-          source="sex"
+          source="isFree"
           choices={[
-            { id: '0', name: 'Femme' },
-            { id: '1', name: 'Homme' },
+            { id: '0', name: 'Oui' },
+            { id: '1', name: 'Non' },
           ]}
         />
-        <TextField source="firstname" />
-        <TextField source="lastname" />
-        <TextField source="zipcode" />
-        <TextField source="city" />
-        <TextField source="country" />
-        <TextField source="email" />
-        <TextField source="mobile" />
+        <TextInput source="app_web" />
+        <TextInput source="app_android" />
+        <TextInput source="app_ios" />
+        <TextInput source="provider_app" />
       </SimpleForm>
     </Create>
   );

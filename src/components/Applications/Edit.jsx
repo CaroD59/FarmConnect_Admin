@@ -5,6 +5,7 @@ import {
   TextInput,
   SelectInput,
 } from 'react-admin';
+import RichTextInput from 'ra-input-rich-text';
 
 const AppsEdit = (props) => {
   return (
@@ -12,7 +13,7 @@ const AppsEdit = (props) => {
       <SimpleForm>
         <TextField source="id" />
         <TextInput source="name" />
-        <TextInput source="description" />
+        <RichTextInput source="description" />
         <TextInput source="logo" />
         <TextInput source="banner" />
         <SelectInput
