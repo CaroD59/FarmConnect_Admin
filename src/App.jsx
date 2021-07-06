@@ -3,6 +3,9 @@ import dataProvider from './dataProvider';
 import UsersList from './components/Users/List';
 import UsersEdit from './components/Users/Edit';
 import UsersPost from './components/Users/Post';
+import AppsList from './components/Applications/List';
+import AppsEdit from './components/Applications/Edit';
+import AppsPost from './components/Applications/Post';
 
 function App() {
   return (
@@ -13,6 +16,12 @@ function App() {
           list={UsersList}
           edit={UsersEdit}
           create={UsersPost}
+        />
+        <Resource
+          name="apps"
+          list={AppsList}
+          edit={AppsEdit}
+          create={AppsPost}
         />
       </Admin>
     </div>
