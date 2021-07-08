@@ -1,9 +1,9 @@
 import {
   Edit,
   SimpleForm,
-  TextField,
   TextInput,
   SelectInput,
+  TextField,
 } from 'react-admin';
 
 const UsersEdit = (props) => {
@@ -24,7 +24,7 @@ const UsersEdit = (props) => {
         <TextInput source="city" />
         <TextInput source="country" />
         <TextInput source="email" />
-        <TextInput source="mobile" />
+        <TextInput source="mobile" min={10} max={10} />
       </SimpleForm>
     </Edit>
   );
