@@ -1,17 +1,10 @@
-import {
-  Edit,
-  SimpleForm,
-  TextField,
-  TextInput,
-  SelectInput,
-} from 'react-admin';
+import { Edit, SimpleForm, TextInput, SelectInput } from 'react-admin';
 import RichTextInput from 'ra-input-rich-text';
 
 const AppsEdit = (props) => {
   return (
     <Edit title="Edition" {...props}>
       <SimpleForm>
-        <TextField source="id" />
         <TextInput source="name" />
         <RichTextInput source="description" />
         <TextInput source="logo" />
