@@ -16,10 +16,10 @@ const AppsEdit = (props) => {
             { id: '1', name: 'Non' },
           ]}
         />
-        <TextInput source="app_web" />
-        <TextInput source="app_android" />
-        <TextInput source="app_ios" />
-        <TextInput source="provider_app" />
+        <TextInput source="appWeb" />
+        <TextInput source="appAndroid" />
+        <TextInput source="appIos" />
+        <TextInput source="providerApp" />
       </SimpleForm>
     </Edit>
   );

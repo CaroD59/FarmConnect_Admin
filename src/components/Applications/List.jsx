@@ -14,10 +14,10 @@ const AppsList = (props) => {
         <TextField source="name" />
         <TextField source="logo" />
         <TextField source="banner" />
-        <UrlField source="app_web" target="_blank" />
-        <UrlField source="app_android" target="_blank" />
-        <UrlField source="app_ios" target="_blank" />
-        <UrlField source="provider_app" target="_blank" />
+        <UrlField source="appWeb" target="_blank" />
+        <UrlField source="appAndroid" target="_blank" />
+        <UrlField source="appIos" target="_blank" />
+        <UrlField source="providerApp" target="_blank" />
         <EditButton basePath="/apps" />
         <DeleteButton basePath="/apps" />
       </Datagrid>
